@@ -1,0 +1,43 @@
+{
+	"scopeName" : "text.defile",
+	"fileTypes" : ["__def.txt", ".def.txt"],
+	"patterns" : [
+		{
+			"name" : "meta.section-title.defile", 
+			"match" : "^ *#### .* #### *$"
+		},
+		{
+			"name" : "meta.title-3.defile", 
+			"match" : "^### .*$"
+		},
+		{
+			"name" : "meta.title-2.defile", 
+			"match" : "^## .*$"
+		},
+		{
+			"name" : "keyword.other.definition-start.defile",
+			"match" : "^# "
+		},
+		{
+			"begin" : "(?<=^# )",
+			"end" : "(^\n$|^ *$|^#)",
+			"name" : "meta.definition.defile",
+			"patterns" : [
+				{
+					"name" : "meta.definition.definition-title.defile",
+					"match" : "(?<=^# ).*(?= :: )"
+				},
+				{
+					"name" : "keyword.other.double-colon.defile",
+					"match" : " :: "
+				},
+				{
+					"name" : "meta.definition.definition-text.defile",
+					"match" : "(?<= :: ).*$|^ +.*$"
+				}
+				
+			]
+		}
+
+	]
+}

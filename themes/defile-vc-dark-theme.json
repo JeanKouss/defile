@@ -1,0 +1,55 @@
+{
+	"name": "defile Dark Theme",
+	
+	"tokenColors": [
+		{
+			"name": "Key symbole",
+			"scope": [
+				"keyword.other.definition-start.defile",
+				"keyword.other.double-colon.defile"
+			],
+			"settings": {
+				"foreground": "#FFC800"
+			}
+		},
+		{
+			"name": "Section title",
+			"scope": [
+				"meta.section-title.defile"
+			],
+			"settings": {
+				"foreground": "#3545FA",
+				"fontStyle" : "bold"
+			}
+		},
+		{
+			"name": "Subtitle",
+			"scope": [
+				"meta.title-3.defile",
+				"meta.title-2.defile"
+			],
+			"settings": {
+				"foreground": "#0099ff",
+				"fontStyle" : "italic"
+			}
+		},
+		{
+			"name": "Definition title",
+			"scope": [
+				"meta.definition.defile meta.definition.definition-title.defile"
+			],
+			"settings": {
+				"foreground": "#00ffd4"
+			}
+		},
+		{
+			"name": "Definition text",
+			"scope": [
+				"meta.definition.definition-text.defile"
+			],
+			"settings": {
+				"foreground": "#BAE6E6"
+			}
+		}
+	]
+}
